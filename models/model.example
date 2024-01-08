@@ -1,0 +1,28 @@
+'use strict';
+const { Model } = require('sequelize');
+
+module.exports = (sequelize, DataTypes) => {
+  class User extends Model {
+    static associate(models) {
+      // Di sini Anda dapat menentukan relasi dengan model lain jika diperlukan
+    }
+  };
+
+  User.init({
+    username: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true
+    }
+  }, {
+    sequelize,
+    modelName: 'User'
+    // Jika Anda ingin menambahkan opsi lain untuk model, Anda dapat melakukannya di sini
+  });
+
+  return User;
+};

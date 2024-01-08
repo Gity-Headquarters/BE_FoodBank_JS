@@ -1,0 +1,17 @@
+'use strict';
+
+module.exports = {
+  up: async (queryInterface, Sequelize) => {
+    // Tambahkan logika untuk menambahkan data ke basis data di sini
+    await queryInterface.bulkInsert('NamaTabel', [
+      { nama_kolom_1: 'Nilai 1', nama_kolom_2: 'Nilai 2', createdAt: new Date(), updatedAt: new Date() },
+      { nama_kolom_1: 'Nilai 3', nama_kolom_2: 'Nilai 4', createdAt: new Date(), updatedAt: new Date() },
+      // ... tambahkan data lainnya
+    ], {});
+  },
+
+  down: async (queryInterface, Sequelize) => {
+    // Tambahkan logika untuk menghapus data dari basis data di sini
+    await queryInterface.bulkDelete('NamaTabel', null, {});
+  }
+};
