@@ -17,6 +17,9 @@ module.exports = {
       name: {
         allowNull: false,
         type: Sequelize.STRING,
+        unique: true, // Menambahkan unique constraint pada kolom name
+        // Menambahkan indeks pada kolom name untuk performa pencarian yang lebih baik
+        index: true,
       },
       address: {
         allowNull: false,
