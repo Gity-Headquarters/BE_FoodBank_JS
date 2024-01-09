@@ -17,6 +17,7 @@ module.exports = {
       },
       nik: {
         allowNull: false,
+        unique: true,
         type: Sequelize.STRING,
       },
       username: {
@@ -27,6 +28,10 @@ module.exports = {
         allowNull: false,
         unique: true,
         type: Sequelize.STRING,
+      },
+      password: {
+        type: Sequelize.STRING,
+        allowNull: false,
       },
       role: {
         allowNull: false,
@@ -41,11 +46,11 @@ module.exports = {
         allowNull: true,
         type: Sequelize.STRING,
       },
-      createdAt: {
+      created_at: {
         allowNull: false,
         type: Sequelize.DATE,
       },
-      updatedAt: {
+      updated_at: {
         allowNull: false,
         type: Sequelize.DATE,
       },

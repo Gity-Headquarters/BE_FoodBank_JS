@@ -35,19 +35,19 @@ module.exports = {
       },
       id_booth: {
         allowNull: false,
-        type: Sequelize.INTEGER,
+        type: Sequelize.UUID, // Ubah tipe data menjadi Sequelize.UUID
         references: {
           model: "Booths", // Nama model untuk asosiasi
-          key: "id", // Kolom referensi di model "Booths"
+          key: "guid", // Kolom referensi di model "Booths"
         },
         onUpdate: "CASCADE",
         onDelete: "CASCADE",
       },
-      createdAt: {
+      created_at: {
         allowNull: false,
         type: Sequelize.DATE,
       },
-      updatedAt: {
+      updated_at: {
         allowNull: false,
         type: Sequelize.DATE,
       },
@@ -63,7 +63,7 @@ module.exports = {
       name: "fk_foods_booths", // Nama constraint
       references: {
         table: "Booths",
-        field: "id",
+        field: "guid",
       },
       onDelete: "CASCADE",
       onUpdate: "CASCADE",
