@@ -1,0 +1,1 @@
+exports.createBooth = require("./insertBooth");
