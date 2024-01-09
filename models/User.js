@@ -36,6 +36,10 @@ module.exports = (sequelize, DataTypes) => {
         unique: true,
         type: DataTypes.STRING,
       },
+      password: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
       role: {
         allowNull: false,
         type: DataTypes.ENUM("user", "admin", "volunteers"),
@@ -50,12 +54,14 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
       },
       createdAt: {
-        allowNull: false,
         type: DataTypes.DATE,
+        allowNull: false,
+        field: "created_at",
       },
       updatedAt: {
-        allowNull: false,
         type: DataTypes.DATE,
+        allowNull: false,
+        field: "updated_at",
       },
     },
     {

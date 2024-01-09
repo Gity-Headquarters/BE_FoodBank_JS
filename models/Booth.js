@@ -6,8 +6,7 @@ const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
   class Booth extends Model {
     static associate(models) {
-      // Di sini Anda dapat menentukan asosiasi dengan model lain jika diperlukan
-      // Contoh: Booth.hasMany(models.Food);
+      Booth.hasMany(models.Food);
     }
   }
   Booth.init(
@@ -68,12 +67,14 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
       },
       createdAt: {
-        allowNull: false,
         type: DataTypes.DATE,
+        allowNull: false,
+        field: "created_at",
       },
       updatedAt: {
-        allowNull: false,
         type: DataTypes.DATE,
+        allowNull: false,
+        field: "updated_at",
       },
     },
     {

@@ -6,8 +6,7 @@ const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
   class Food extends Model {
     static associate(models) {
-      // Di sini Anda dapat menentukan asosiasi dengan model lain jika diperlukan
-      // Contoh: Food.belongsTo(models.Booth);
+      Food.belongsTo(models.Booth);
     }
   }
   Food.init(
@@ -48,18 +47,20 @@ module.exports = (sequelize, DataTypes) => {
         // Definisi foreign key yang merujuk ke tabel Booths
         references: {
           model: "Booths",
-          key: "id",
+          key: "guid",
         },
         onUpdate: "CASCADE",
         onDelete: "CASCADE",
       },
       createdAt: {
-        allowNull: false,
         type: DataTypes.DATE,
+        allowNull: false,
+        field: "created_at",
       },
       updatedAt: {
-        allowNull: false,
         type: DataTypes.DATE,
+        allowNull: false,
+        field: "updated_at",
       },
     },
     {
