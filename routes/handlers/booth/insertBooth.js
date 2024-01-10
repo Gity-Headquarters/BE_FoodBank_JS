@@ -7,7 +7,7 @@ const boothSchema = {
   name: { type: "string", empty: false, max: 255 },
   address: { type: "string", empty: false },
   image: { type: "string", optional: true, max: 255 },
-  food_total: { type: "number", empty: false },
+  food_total: { type: "string", empty: false },
   time_open: { type: "string", empty: false },
   time_close: { type: "string", empty: false },
   status: {
