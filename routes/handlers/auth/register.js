@@ -31,10 +31,10 @@ const createUser = async (req, res) => {
   }
 
   let defaultImages = [
-    "https://gambar-1.com/",
-    "https://gambar-2.com/",
-    "https://gambar-3.com/",
-    "https://gambar-4.com/",
+    "https://storage.googleapis.com/foodbank-assets/profile_default_1.svg",
+    "https://storage.googleapis.com/foodbank-assets/profile_default_2.svg",
+    "https://storage.googleapis.com/foodbank-assets/profile_default_3.svg",
+    "https://storage.googleapis.com/foodbank-assets/profile_default_4.svg",
   ];
 
   // Mengisi image_profile secara acak dari default image jika kosong
