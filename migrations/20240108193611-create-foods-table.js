@@ -55,6 +55,7 @@ module.exports = {
 
     // Tambahkan indeks untuk id_booth untuk meningkatkan performa query
     await queryInterface.addIndex("Foods", ["id_booth"]);
+    await queryInterface.addIndex("Foods", ["guid"]);
 
     // Menambahkan foreign key constraint pada kolom id_booth di tabel Foods
     await queryInterface.addConstraint("Foods", {

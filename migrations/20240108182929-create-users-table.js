@@ -55,6 +55,8 @@ module.exports = {
         type: Sequelize.DATE,
       },
     });
+
+    await queryInterface.addIndex("Users", ["guid"]);
   },
 
   async down(queryInterface, Sequelize) {
