@@ -1,0 +1,13 @@
+{
+    "type": "service_account",
+    "project_id": "food-bank-410807",
+    "private_key_id": "732fffd507f5f06b6ccba68dfdd4ab011ffc0de5",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDBqecpvpHN6oHZ\nTlbGJupKPCUiqez8qwp7wgiW127omiJxlRjhGpl4FhzEGAp5h5My70arp/HF4hNm\nrBqtAlVthvMZu9IaZRLRQWrXO8kAeMQMu84Sq/iYDw43S8ZMUHlmXPox3Ybw9bD3\nRRB2hL8kPGByAErC/7kn1keQEas/pLw3cX+Csojm9s1an6Ao4TlGJWOK20M/B4I8\nwzi8P/V5PHQUYncgpPWYNqWMuS9OLoqdYOOLwZCHfL6YoulQaqsbJZKKPWIsOKzw\nH104Qs4CmRomoZ8LvnCItHmN1W0281t3oZI4Kc1yi4F5AcR4d08YHV50k+tAeV4W\nWAYvjSrbAgMBAAECggEAEK3D4j0VLFyXxd63HtlEVxP3YS6s4bt1UeBz6IT+ensN\nbMAASyEeuh0YnLn/uCTsXd5saEvOSOv5UcYp65NTRvVW9ttnJkcxwXw9A4zH+QnT\n9wJhpnGeULI5pJq0P4Eaw3pODedcDMdY8CLH+GN8XSMm1AqhMn2sAfm0lhX/eQgq\n1n+UzFhk8t9Vbtb0mi1WKnf1y++eCpyS5kwYazcT7daTcJfcq8SIYz0RCfOM31Hf\nsIGSWe8o2BbRsN0S1BuxBvaaIh4ZNDL/VMNXDeBaoipW+gKNGDtrlMxuyJT2gss2\nzbR6VMOL3+p4ofs5hBVbDH7+hmsZ5M0mngMrXh9LQQKBgQDhdMcZMcEyEg1SRvji\nrWYQgumwZkXdC3nirejgpfCpj4vnN/AVSQlUc5gvtugayhzsGcd4Z9G3KjTzyZTp\nWDAYGmp5Q7PXQp6tcdXr2qS2899gpRFU99Ec0RcHfiS3jFCimD0TMX9NyIouye/n\nTSpCKzr97TUxJlVEfQ0V6KMaewKBgQDb5oFbXtlsTzT+hUBQjsdHXBip4sew+XXO\nYXFB4n/ZM5ajoaIaae1avgeXuYF84vmLLM/Q9eCJq9EIPqRQxvm6CwaA9GCgMHKy\nBswKfOBw/AyJ7fyReCsXtcOLr9rXZ46cfgk/K+sMSwEbi97lrqGknyRCuqhhaGM+\nguxxtezzIQKBgCZ/oWvs8heRu5KcKe3TPEV/hVYo8K8hQYvytHx/+YuKxpISHD4W\nPbCdGJS1QAcrEitC76vg1o/XdjlW58W82GGVSS8x32jXqG7nrGbc7BmNpUxEg6Ql\nuSCZl7wgzzZEkJRjOLKpVhq7LtV0iDHQHHI2HZm0wsuExzStwelG02s3AoGAd1LL\nGrOLM5R/YyUXUx9Gz1gQIg9m4Idc/5IsjN3FFi1CLqSEe+TC4RyArjoBI61eT8EP\nO4pQPyQ2l0y2iQaPd/6Hlu4EiKgBdMzvZzl/6I88lpPHG4CjkYgWBfR0wbH11sEl\nb1v7fX4tqa7qUqPCHrwkRvlWaRTl1YPhnYpke0ECgYAmVs6Yx58+6csTmVmL7I0C\nBiqbKX9vDIWPIlyhaFf3lE9Adw4fJrLcny9rhfZjLiAjic6UdDaJdQcoTPrt0tuQ\nIb9xKZZHfLtrg380JOa4aa4IKPUheSUUGxXkYnAMOaUqOrWxgzYHw3fdSyu8lxlX\nT3xK+aEXY24woLqbywhVVA==\n-----END PRIVATE KEY-----\n",
+    "client_email": "access-foodbank-assets@food-bank-410807.iam.gserviceaccount.com",
+    "client_id": "107438027719610637877",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/access-foodbank-assets%40food-bank-410807.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
