@@ -1,0 +1,1 @@
+exports.createFood = require("./insertFood");
