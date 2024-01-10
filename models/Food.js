@@ -22,6 +22,10 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.UUID,
         defaultValue: DataTypes.UUIDV4,
       },
+      name: {
+        allowNull: true,
+        type: DataTypes.STRING,
+      },
       jenis: {
         allowNull: false,
         type: DataTypes.ENUM(
@@ -37,7 +41,7 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
         type: DataTypes.INTEGER,
       },
-      gambar: {
+      image: {
         allowNull: true,
         type: DataTypes.STRING,
       },
