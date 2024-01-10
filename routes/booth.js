@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { multerUpload } = require("../middleware/gcs-storage");
+const { multerUpload } = require("../middleware/gcsStorage");
 
 const boothHandler = require("./handlers/booth");
 
