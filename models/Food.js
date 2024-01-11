@@ -6,7 +6,7 @@ const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
   class Food extends Model {
     static associate(models) {
-      Food.belongsTo(models.Booth);
+      Food.belongsTo(models.Booth, { foreignKey: "id_booth" });
     }
   }
   Food.init(
@@ -47,7 +47,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       id_booth: {
         allowNull: false,
-        type: DataTypes.INTEGER,
+        type: DataTypes.UUID,
         // Definisi foreign key yang merujuk ke tabel Booths
         references: {
           model: "Booths",

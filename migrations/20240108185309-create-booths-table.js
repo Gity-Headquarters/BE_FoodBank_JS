@@ -35,11 +35,11 @@ module.exports = {
       },
       time_open: {
         allowNull: false,
-        type: Sequelize.TIME,
+        type: Sequelize.STRING,
       },
       time_close: {
         allowNull: false,
-        type: Sequelize.TIME,
+        type: Sequelize.STRING,
       },
       status: {
         allowNull: false,
