@@ -2,12 +2,13 @@
 const { Model } = require("sequelize");
 
 module.exports = (sequelize, DataTypes) => {
-  class User extends Model {
+  class Donation extends Model {
     static associate(models) {
-      User.hasMany(models.Donation, { foreignKey: "user_id" });
+      Donation.belongsTo(models.Booth, { foreignKey: "booth_id" });
+      Donation.belongsTo(models.User, { foreignKey: "user_id" });
     }
   }
-  User.init(
+  Donation.init(
     {
       id: {
         allowNull: false,
@@ -20,33 +21,27 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.UUID,
         defaultValue: DataTypes.UUIDV4,
       },
-      nik: {
+      booth_id: {
         allowNull: false,
-        type: DataTypes.STRING,
+        type: DataTypes.UUID,
       },
-      username: {
+      user_id: {
         allowNull: false,
-        type: DataTypes.STRING,
+        type: DataTypes.UUID,
       },
-      email: {
-        allowNull: false,
-        unique: true,
-        type: DataTypes.STRING,
-      },
-      password: {
-        type: DataTypes.STRING,
-        allowNull: true,
-      },
-      role: {
-        allowNull: false,
-        type: DataTypes.ENUM("user", "admin", "volunteers"),
-        defaultValue: "user",
-      },
-      image_profile: {
+      amount: {
         allowNull: true,
         type: DataTypes.STRING,
       },
-      address: {
+      status: {
+        allowNull: false,
+        type: DataTypes.STRING,
+      },
+      code: {
+        allowNull: false,
+        type: DataTypes.INTEGER,
+      },
+      payment_url: {
         allowNull: true,
         type: DataTypes.STRING,
       },
@@ -63,9 +58,9 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
       sequelize,
-      modelName: "User",
-      tableName: "Users",
+      modelName: "Donation",
+      tableName: "Donations",
     }
   );
-  return User;
+  return Donation;
 };
